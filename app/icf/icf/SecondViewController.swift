@@ -2,7 +2,7 @@
 //  SecondViewController.swift
 //  icf
 //
-//  Created by Christian Koller on 20.10.15.
+//  Created by Patrick Gröller, Christian Koller, Helmut Kopf on 20.10.15.
 //  Copyright © 2015 FH. All rights reserved.
 //
 
