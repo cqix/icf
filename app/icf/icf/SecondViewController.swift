@@ -9,10 +9,17 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    
+    @IBOutlet weak var groupPicker: UIPickerView!
+    let groupDataSource = GroupDataSource()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        groupPicker.dataSource = groupDataSource
+        groupPicker.delegate = groupDataSource
+        
+        groupPicker.selectRow(groupDataSource.getSavedIndex(), inComponent: 0, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
