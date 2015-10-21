@@ -10,15 +10,27 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
+    @IBOutlet weak var coursePicker: UIPickerView!
+    @IBOutlet weak var yearPicker: UIPickerView!
     @IBOutlet weak var groupPicker: UIPickerView!
+    
     let groupDataSource = GroupDataSource()
+    let yearDataSource = YearDataSource()
+    let courseDataSource = CourseDataSource()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        coursePicker.dataSource = courseDataSource
+        coursePicker.delegate = courseDataSource
+        coursePicker.selectRow(courseDataSource.getSavedIndex(), inComponent: 0, animated: true)
+        
+        yearPicker.dataSource = yearDataSource
+        yearPicker.delegate = yearDataSource
+        yearPicker.selectRow(yearDataSource.getSavedIndex(), inComponent: 0, animated: true)
+        
         groupPicker.dataSource = groupDataSource
         groupPicker.delegate = groupDataSource
-        
         groupPicker.selectRow(groupDataSource.getSavedIndex(), inComponent: 0, animated: true)
     }
 

@@ -15,6 +15,8 @@
 		AA8FA2A11BD67F00000950F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA8FA29F1BD67F00000950F5 /* LaunchScreen.storyboard */; };
 		AA8FA2AC1BD67F00000950F5 /* icfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FA2AB1BD67F00000950F5 /* icfTests.swift */; };
 		AA9E696B1BD78CFA008F9F8B /* GroupDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E696A1BD78CFA008F9F8B /* GroupDataSource.swift */; settings = {ASSET_TAGS = (); }; };
+		AA9E696D1BD7969E008F9F8B /* YearDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E696C1BD7969E008F9F8B /* YearDataSource.swift */; settings = {ASSET_TAGS = (); }; };
+		AA9E696F1BD796AD008F9F8B /* CourseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E696E1BD796AD008F9F8B /* CourseDataSource.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		AA8FA2AB1BD67F00000950F5 /* icfTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icfTests.swift; sourceTree = "<group>"; };
 		AA8FA2AD1BD67F00000950F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA9E696A1BD78CFA008F9F8B /* GroupDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupDataSource.swift; sourceTree = "<group>"; };
+		AA9E696C1BD7969E008F9F8B /* YearDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearDataSource.swift; sourceTree = "<group>"; };
+		AA9E696E1BD796AD008F9F8B /* CourseDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 				AA8FA29F1BD67F00000950F5 /* LaunchScreen.storyboard */,
 				AA8FA2A21BD67F00000950F5 /* Info.plist */,
 				AA9E696A1BD78CFA008F9F8B /* GroupDataSource.swift */,
+				AA9E696C1BD7969E008F9F8B /* YearDataSource.swift */,
+				AA9E696E1BD796AD008F9F8B /* CourseDataSource.swift */,
 			);
 			path = icf;
 			sourceTree = "<group>";
@@ -206,8 +212,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA9E696B1BD78CFA008F9F8B /* GroupDataSource.swift in Sources */,
+				AA9E696F1BD796AD008F9F8B /* CourseDataSource.swift in Sources */,
 				AA8FA2991BD67F00000950F5 /* SecondViewController.swift in Sources */,
 				AA8FA2951BD67F00000950F5 /* AppDelegate.swift in Sources */,
+				AA9E696D1BD7969E008F9F8B /* YearDataSource.swift in Sources */,
 				AA8FA2971BD67F00000950F5 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
