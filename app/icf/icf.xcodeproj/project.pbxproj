@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA8CB6CE1BD91D20005E358C /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8CB6CD1BD91D20005E358C /* AboutViewController.swift */; };
+		AA8CB6D01BD91E60005E358C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8CB6CF1BD91E60005E358C /* MapKit.framework */; };
 		AA8FA2951BD67F00000950F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FA2941BD67F00000950F5 /* AppDelegate.swift */; };
 		AA8FA2971BD67F00000950F5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FA2961BD67F00000950F5 /* FirstViewController.swift */; };
 		AA8FA2991BD67F00000950F5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FA2981BD67F00000950F5 /* SecondViewController.swift */; };
@@ -14,9 +16,9 @@
 		AA8FA29E1BD67F00000950F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA8FA29D1BD67F00000950F5 /* Assets.xcassets */; };
 		AA8FA2A11BD67F00000950F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA8FA29F1BD67F00000950F5 /* LaunchScreen.storyboard */; };
 		AA8FA2AC1BD67F00000950F5 /* icfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FA2AB1BD67F00000950F5 /* icfTests.swift */; };
-		AA9E696B1BD78CFA008F9F8B /* GroupDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E696A1BD78CFA008F9F8B /* GroupDataSource.swift */; settings = {ASSET_TAGS = (); }; };
-		AA9E696D1BD7969E008F9F8B /* YearDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E696C1BD7969E008F9F8B /* YearDataSource.swift */; settings = {ASSET_TAGS = (); }; };
-		AA9E696F1BD796AD008F9F8B /* CourseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E696E1BD796AD008F9F8B /* CourseDataSource.swift */; settings = {ASSET_TAGS = (); }; };
+		AA9E696B1BD78CFA008F9F8B /* GroupDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E696A1BD78CFA008F9F8B /* GroupDataSource.swift */; };
+		AA9E696D1BD7969E008F9F8B /* YearDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E696C1BD7969E008F9F8B /* YearDataSource.swift */; };
+		AA9E696F1BD796AD008F9F8B /* CourseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E696E1BD796AD008F9F8B /* CourseDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA8CB6CD1BD91D20005E358C /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		AA8CB6CF1BD91E60005E358C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AA8CB6D11BD92049005E358C /* Graz.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Graz.gpx; sourceTree = "<group>"; };
 		AA8FA2911BD67F00000950F5 /* icf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = icf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA8FA2941BD67F00000950F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA8FA2961BD67F00000950F5 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA8CB6D01BD91E60005E358C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +73,7 @@
 		AA8FA2881BD67F00000950F5 = {
 			isa = PBXGroup;
 			children = (
+				AA8CB6CF1BD91E60005E358C /* MapKit.framework */,
 				AA8FA2931BD67F00000950F5 /* icf */,
 				AA8FA2AA1BD67F00000950F5 /* icfTests */,
 				AA8FA2921BD67F00000950F5 /* Products */,
@@ -85,6 +92,7 @@
 		AA8FA2931BD67F00000950F5 /* icf */ = {
 			isa = PBXGroup;
 			children = (
+				AA8CB6D11BD92049005E358C /* Graz.gpx */,
 				AA8FA2941BD67F00000950F5 /* AppDelegate.swift */,
 				AA8FA2961BD67F00000950F5 /* FirstViewController.swift */,
 				AA8FA2981BD67F00000950F5 /* SecondViewController.swift */,
@@ -95,6 +103,7 @@
 				AA9E696A1BD78CFA008F9F8B /* GroupDataSource.swift */,
 				AA9E696C1BD7969E008F9F8B /* YearDataSource.swift */,
 				AA9E696E1BD796AD008F9F8B /* CourseDataSource.swift */,
+				AA8CB6CD1BD91D20005E358C /* AboutViewController.swift */,
 			);
 			path = icf;
 			sourceTree = "<group>";
@@ -160,6 +169,11 @@
 				TargetAttributes = {
 					AA8FA2901BD67F00000950F5 = {
 						CreatedOnToolsVersion = 7.0.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					AA8FA2A61BD67F00000950F5 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -214,6 +228,7 @@
 				AA9E696B1BD78CFA008F9F8B /* GroupDataSource.swift in Sources */,
 				AA9E696F1BD796AD008F9F8B /* CourseDataSource.swift in Sources */,
 				AA8FA2991BD67F00000950F5 /* SecondViewController.swift in Sources */,
+				AA8CB6CE1BD91D20005E358C /* AboutViewController.swift in Sources */,
 				AA8FA2951BD67F00000950F5 /* AppDelegate.swift in Sources */,
 				AA9E696D1BD7969E008F9F8B /* YearDataSource.swift in Sources */,
 				AA8FA2971BD67F00000950F5 /* FirstViewController.swift in Sources */,
