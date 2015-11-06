@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class FirstViewController: UIViewController {
 
@@ -25,6 +26,8 @@ class FirstViewController: UIViewController {
                             print("We got: "+contents)
                             dispatch_async(dispatch_get_main_queue()) {
                                 self.LabelMain.text = contents
+                                
+                                AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
                             }
                         
                     } catch let error {
