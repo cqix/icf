@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Home-->
@@ -56,10 +57,10 @@
                                     <segment title="Lecturer"/>
                                 </segments>
                             </segmentedControl>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Wm-wz-wKR">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Wm-wz-wKR">
                                 <rect key="frame" x="20" y="79" width="560" height="424"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ly9-PI-F5Q">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ly9-PI-F5Q">
                                         <rect key="frame" x="33" y="272" width="48" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="nNb-Ej-ILF"/>
@@ -68,10 +69,10 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PvY-ZR-QZQ">
+                                    <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PvY-ZR-QZQ">
                                         <rect key="frame" x="33" y="294" width="193" height="83"/>
                                     </pickerView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Course" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0A-3B-MDx">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Course" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0A-3B-MDx">
                                         <rect key="frame" x="33" y="25" width="55" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="ntj-AQ-5dD"/>
@@ -80,7 +81,7 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgc-Ua-ewy">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgc-Ua-ewy">
                                         <rect key="frame" x="33" y="141" width="34" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="qqA-7x-kZj"/>
@@ -89,33 +90,45 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WwE-Wf-wER">
+                                    <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WwE-Wf-wER">
                                         <rect key="frame" x="33" y="170" width="193" height="83"/>
                                     </pickerView>
-                                    <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XfE-pS-Rob">
+                                    <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XfE-pS-Rob">
                                         <rect key="frame" x="33" y="54" width="193" height="83"/>
                                     </pickerView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="WwE-Wf-wER" firstAttribute="height" secondItem="XfE-pS-Rob" secondAttribute="height" id="0Fz-zC-yJ4"/>
+                                    <constraint firstItem="PvY-ZR-QZQ" firstAttribute="leading" secondItem="8Wm-wz-wKR" secondAttribute="leading" constant="10" id="0oF-K6-KBV"/>
+                                    <constraint firstAttribute="trailing" secondItem="WwE-Wf-wER" secondAttribute="trailing" constant="10" id="2gd-59-Jcy"/>
                                     <constraint firstItem="PvY-ZR-QZQ" firstAttribute="top" secondItem="ly9-PI-F5Q" secondAttribute="bottom" constant="5" id="2zo-ng-jDQ"/>
+                                    <constraint firstItem="lgc-Ua-ewy" firstAttribute="leading" secondItem="8Wm-wz-wKR" secondAttribute="leading" constant="10" id="CAE-oQ-Kp2"/>
+                                    <constraint firstItem="XfE-pS-Rob" firstAttribute="leading" secondItem="8Wm-wz-wKR" secondAttribute="leading" constant="10" id="Cql-9O-kXR"/>
                                     <constraint firstItem="XfE-pS-Rob" firstAttribute="top" secondItem="I0A-3B-MDx" secondAttribute="bottom" constant="5" id="GRT-Se-R98"/>
                                     <constraint firstAttribute="bottom" secondItem="PvY-ZR-QZQ" secondAttribute="bottom" priority="900" constant="5" id="GaC-Gg-gMF"/>
+                                    <constraint firstItem="ly9-PI-F5Q" firstAttribute="leading" secondItem="8Wm-wz-wKR" secondAttribute="leading" constant="10" id="IZS-ia-mh1"/>
                                     <constraint firstItem="PvY-ZR-QZQ" firstAttribute="height" secondItem="XfE-pS-Rob" secondAttribute="height" id="KIp-ZB-puc"/>
                                     <constraint firstItem="ly9-PI-F5Q" firstAttribute="top" secondItem="WwE-Wf-wER" secondAttribute="bottom" constant="5" id="Ng2-kC-FWT"/>
+                                    <constraint firstItem="I0A-3B-MDx" firstAttribute="leading" secondItem="8Wm-wz-wKR" secondAttribute="leading" constant="10" id="OWN-Bg-dIi"/>
+                                    <constraint firstAttribute="trailing" secondItem="PvY-ZR-QZQ" secondAttribute="trailing" constant="10" id="W0x-jZ-xHv"/>
                                     <constraint firstItem="I0A-3B-MDx" firstAttribute="top" secondItem="8Wm-wz-wKR" secondAttribute="top" priority="900" constant="5" id="b7I-dI-CeA"/>
                                     <constraint firstItem="lgc-Ua-ewy" firstAttribute="top" secondItem="XfE-pS-Rob" secondAttribute="bottom" constant="5" id="fgP-80-V4t"/>
+                                    <constraint firstAttribute="trailing" secondItem="XfE-pS-Rob" secondAttribute="trailing" constant="10" id="hcE-Yj-B1M"/>
                                     <constraint firstItem="WwE-Wf-wER" firstAttribute="top" secondItem="lgc-Ua-ewy" secondAttribute="bottom" constant="5" id="kBd-VH-N94"/>
+                                    <constraint firstItem="WwE-Wf-wER" firstAttribute="leading" secondItem="8Wm-wz-wKR" secondAttribute="leading" constant="10" id="rw6-Tl-Eyu"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="UqC-fX-8oH" firstAttribute="width" secondItem="QS5-Rx-YEW" secondAttribute="width" id="6BM-LJ-TR8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8Wm-wz-wKR" secondAttribute="trailing" id="9cW-TC-XmI"/>
                             <constraint firstItem="UqC-fX-8oH" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="GpQ-wO-Z3N"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="8Wm-wz-wKR" secondAttribute="bottom" priority="900" constant="3" id="Mqi-sg-og6"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="8Wm-wz-wKR" secondAttribute="leading" id="ZDE-eY-7zr"/>
                             <constraint firstItem="8Wm-wz-wKR" firstAttribute="top" secondItem="UqC-fX-8oH" secondAttribute="bottom" priority="900" constant="5" id="tYh-px-Erv"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="8Wm-wz-wKR" secondAttribute="leading" id="ya9-3L-aqm"/>
                             <constraint firstItem="UqC-fX-8oH" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" priority="900" constant="10" id="zek-p7-bOg"/>
                         </constraints>
                     </view>
