@@ -47,51 +47,76 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UqC-fX-8oH">
-                                <rect key="frame" x="20" y="20" width="560" height="29"/>
+                                <rect key="frame" x="20" y="30" width="560" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="lUT-SY-fz1"/>
+                                </constraints>
                                 <segments>
                                     <segment title="Student"/>
                                     <segment title="Lecturer"/>
                                 </segments>
                             </segmentedControl>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Wm-wz-wKR">
-                                <rect key="frame" x="20" y="56" width="560" height="424"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Wm-wz-wKR">
+                                <rect key="frame" x="20" y="79" width="560" height="424"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ly9-PI-F5Q">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ly9-PI-F5Q">
                                         <rect key="frame" x="33" y="272" width="48" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="nNb-Ej-ILF"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PvY-ZR-QZQ">
+                                    <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PvY-ZR-QZQ">
                                         <rect key="frame" x="33" y="294" width="193" height="83"/>
                                     </pickerView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Course" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0A-3B-MDx">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Course" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0A-3B-MDx">
                                         <rect key="frame" x="33" y="25" width="55" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="ntj-AQ-5dD"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgc-Ua-ewy">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgc-Ua-ewy">
                                         <rect key="frame" x="33" y="141" width="34" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="qqA-7x-kZj"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WwE-Wf-wER">
+                                    <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WwE-Wf-wER">
                                         <rect key="frame" x="33" y="170" width="193" height="83"/>
                                     </pickerView>
-                                    <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XfE-pS-Rob">
+                                    <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XfE-pS-Rob">
                                         <rect key="frame" x="33" y="54" width="193" height="83"/>
                                     </pickerView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="WwE-Wf-wER" firstAttribute="height" secondItem="XfE-pS-Rob" secondAttribute="height" id="0Fz-zC-yJ4"/>
+                                    <constraint firstItem="PvY-ZR-QZQ" firstAttribute="top" secondItem="ly9-PI-F5Q" secondAttribute="bottom" constant="5" id="2zo-ng-jDQ"/>
+                                    <constraint firstItem="XfE-pS-Rob" firstAttribute="top" secondItem="I0A-3B-MDx" secondAttribute="bottom" constant="5" id="GRT-Se-R98"/>
+                                    <constraint firstAttribute="bottom" secondItem="PvY-ZR-QZQ" secondAttribute="bottom" priority="900" constant="5" id="GaC-Gg-gMF"/>
+                                    <constraint firstItem="PvY-ZR-QZQ" firstAttribute="height" secondItem="XfE-pS-Rob" secondAttribute="height" id="KIp-ZB-puc"/>
+                                    <constraint firstItem="ly9-PI-F5Q" firstAttribute="top" secondItem="WwE-Wf-wER" secondAttribute="bottom" constant="5" id="Ng2-kC-FWT"/>
+                                    <constraint firstItem="I0A-3B-MDx" firstAttribute="top" secondItem="8Wm-wz-wKR" secondAttribute="top" priority="900" constant="5" id="b7I-dI-CeA"/>
+                                    <constraint firstItem="lgc-Ua-ewy" firstAttribute="top" secondItem="XfE-pS-Rob" secondAttribute="bottom" constant="5" id="fgP-80-V4t"/>
+                                    <constraint firstItem="WwE-Wf-wER" firstAttribute="top" secondItem="lgc-Ua-ewy" secondAttribute="bottom" constant="5" id="kBd-VH-N94"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="UqC-fX-8oH" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="4bC-Fa-3dP"/>
                             <constraint firstItem="UqC-fX-8oH" firstAttribute="width" secondItem="QS5-Rx-YEW" secondAttribute="width" id="6BM-LJ-TR8"/>
                             <constraint firstItem="UqC-fX-8oH" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="GpQ-wO-Z3N"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="8Wm-wz-wKR" secondAttribute="bottom" priority="900" constant="3" id="Mqi-sg-og6"/>
+                            <constraint firstItem="8Wm-wz-wKR" firstAttribute="top" secondItem="UqC-fX-8oH" secondAttribute="bottom" priority="900" constant="5" id="tYh-px-Erv"/>
+                            <constraint firstItem="UqC-fX-8oH" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" priority="900" constant="10" id="zek-p7-bOg"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="settings" id="cPa-gy-q4n"/>
