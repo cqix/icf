@@ -2,7 +2,7 @@
 //  icfUITests.swift
 //  icfUITests
 //
-//  Created by Christian Koller on 11.12.15.
+//  Created by Patrick Gröller, Christian Koller, Helmut Kopf on 11.12.15.
 //  Copyright © 2015 FH. All rights reserved.
 //
 
