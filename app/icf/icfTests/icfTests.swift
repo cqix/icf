@@ -24,12 +24,32 @@ class icfTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let expectation = expectationWithDescription("Whatever")
+        
+        dispatch_async(dispatch_get_main_queue()) { () -> Void in
+            print("Start")
+            sleep(4)
+            print("End")
+            expectation.fulfill()
+        }
+        
+        waitForExpectationsWithTimeout(5) { (err: NSError?) in
+            if let e=err{
+                print("We wait, but timeout \(e)")
+            } else {
+                print("OK")
+            }
+        }
+        print("Note done")
+
+        
     }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock {
-            // Put the code you want to measure the time of here.
+            sleep(arc4random_uniform(4) + 1)
         }
     }
     
