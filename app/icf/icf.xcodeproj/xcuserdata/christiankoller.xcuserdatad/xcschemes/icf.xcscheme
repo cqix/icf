@@ -38,6 +38,16 @@
                ReferencedContainer = "container:icf.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AAAC53BF1C1B3F1B0003305D"
+               BuildableName = "icfUITests.xctest"
+               BlueprintName = "icfUITests"
+               ReferencedContainer = "container:icf.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
