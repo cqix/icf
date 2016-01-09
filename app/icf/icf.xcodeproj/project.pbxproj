@@ -21,6 +21,7 @@
 		AA9E696F1BD796AD008F9F8B /* CourseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E696E1BD796AD008F9F8B /* CourseDataSource.swift */; };
 		AAAC53C31C1B3F1B0003305D /* icfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAC53C21C1B3F1B0003305D /* icfUITests.swift */; };
 		AAC74CB91C41309200BCEF0F /* LecturerNameDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC74CB81C41309200BCEF0F /* LecturerNameDataSource.swift */; };
+		AAC74CBB1C41337000BCEF0F /* TypeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC74CBA1C41337000BCEF0F /* TypeDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		AAAC53C21C1B3F1B0003305D /* icfUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icfUITests.swift; sourceTree = "<group>"; };
 		AAAC53C41C1B3F1B0003305D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAC74CB81C41309200BCEF0F /* LecturerNameDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LecturerNameDataSource.swift; sourceTree = "<group>"; };
+		AAC74CBA1C41337000BCEF0F /* TypeDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				AA9E696E1BD796AD008F9F8B /* CourseDataSource.swift */,
 				AA8CB6CD1BD91D20005E358C /* AboutViewController.swift */,
 				AAC74CB81C41309200BCEF0F /* LecturerNameDataSource.swift */,
+				AAC74CBA1C41337000BCEF0F /* TypeDataSource.swift */,
 			);
 			path = icf;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAC74CBB1C41337000BCEF0F /* TypeDataSource.swift in Sources */,
 				AA9E696B1BD78CFA008F9F8B /* GroupDataSource.swift in Sources */,
 				AAC74CB91C41309200BCEF0F /* LecturerNameDataSource.swift in Sources */,
 				AA9E696F1BD796AD008F9F8B /* CourseDataSource.swift in Sources */,

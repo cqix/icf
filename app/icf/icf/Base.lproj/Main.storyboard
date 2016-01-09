@@ -173,6 +173,9 @@
                     <tabBarItem key="tabBarItem" title="Settings" image="settings" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="GroupPicker" destination="PvY-ZR-QZQ" id="DSC-QY-s8I"/>
+                        <outlet property="LecturerView" destination="Tek-us-nQk" id="WUT-Lc-1dc"/>
+                        <outlet property="StudentView" destination="8Wm-wz-wKR" id="9y7-mz-zdm"/>
+                        <outlet property="TypeSelection" destination="UqC-fX-8oH" id="IKy-bK-d8x"/>
                         <outlet property="coursePicker" destination="XfE-pS-Rob" id="eR3-JB-lT4"/>
                         <outlet property="groupPicker" destination="PvY-ZR-QZQ" id="n1K-E8-624"/>
                         <outlet property="lecturerNameText" destination="iBK-yR-EJn" id="sG2-Lw-nvt"/>

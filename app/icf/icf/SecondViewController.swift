@@ -15,7 +15,11 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var groupPicker: UIPickerView!
     
     @IBOutlet weak var lecturerNameText: UITextField!
+    @IBOutlet weak var TypeSelection: UISegmentedControl!
+    @IBOutlet weak var StudentView: UIView!
+    @IBOutlet weak var LecturerView: UIView!
     
+    let typeDataSource = TypeDataSource()
     let groupDataSource = GroupDataSource()
     let yearDataSource = YearDataSource()
     let courseDataSource = CourseDataSource()
@@ -23,6 +27,10 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        TypeSelection.selectedSegmentIndex = typeDataSource.getSavedIndex()
+        setTypeView()
+        TypeSelection.addTarget(self, action: "segmentedControlValueChanged:", forControlEvents: .ValueChanged)
         
         coursePicker.dataSource = courseDataSource
         coursePicker.delegate = courseDataSource
@@ -44,7 +52,21 @@ class SecondViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func segmentedControlValueChanged(segment: UISegmentedControl) {
+        typeDataSource.saveIndex(segment.selectedSegmentIndex)
+        setTypeView()
+    }
+    
+    func setTypeView() {
+        if (typeDataSource.getSavedIndex()==1) {
+            StudentView.hidden = true
+            LecturerView.hidden = false
+        } else {
+            StudentView.hidden = false
+            LecturerView.hidden = true
+        }
+    }
 
 }
 
