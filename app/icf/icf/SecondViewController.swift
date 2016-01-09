@@ -14,9 +14,12 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var yearPicker: UIPickerView!
     @IBOutlet weak var groupPicker: UIPickerView!
     
+    @IBOutlet weak var lecturerNameText: UITextField!
+    
     let groupDataSource = GroupDataSource()
     let yearDataSource = YearDataSource()
     let courseDataSource = CourseDataSource()
+    let lecturerNameDataSource = LecturerNameDataSource()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +35,9 @@ class SecondViewController: UIViewController {
         groupPicker.dataSource = groupDataSource
         groupPicker.delegate = groupDataSource
         groupPicker.selectRow(groupDataSource.getSavedIndex(), inComponent: 0, animated: true)
+        
+        lecturerNameText.text = lecturerNameDataSource.getSavedText()
+        lecturerNameText.delegate = lecturerNameDataSource
     }
 
     override func didReceiveMemoryWarning() {

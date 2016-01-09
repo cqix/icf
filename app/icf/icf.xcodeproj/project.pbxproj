@@ -20,6 +20,7 @@
 		AA9E696D1BD7969E008F9F8B /* YearDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E696C1BD7969E008F9F8B /* YearDataSource.swift */; };
 		AA9E696F1BD796AD008F9F8B /* CourseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E696E1BD796AD008F9F8B /* CourseDataSource.swift */; };
 		AAAC53C31C1B3F1B0003305D /* icfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAC53C21C1B3F1B0003305D /* icfUITests.swift */; };
+		AAC74CB91C41309200BCEF0F /* LecturerNameDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC74CB81C41309200BCEF0F /* LecturerNameDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		AAAC53C01C1B3F1B0003305D /* icfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = icfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAAC53C21C1B3F1B0003305D /* icfUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icfUITests.swift; sourceTree = "<group>"; };
 		AAAC53C41C1B3F1B0003305D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAC74CB81C41309200BCEF0F /* LecturerNameDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LecturerNameDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				AA9E696C1BD7969E008F9F8B /* YearDataSource.swift */,
 				AA9E696E1BD796AD008F9F8B /* CourseDataSource.swift */,
 				AA8CB6CD1BD91D20005E358C /* AboutViewController.swift */,
+				AAC74CB81C41309200BCEF0F /* LecturerNameDataSource.swift */,
 			);
 			path = icf;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA9E696B1BD78CFA008F9F8B /* GroupDataSource.swift in Sources */,
+				AAC74CB91C41309200BCEF0F /* LecturerNameDataSource.swift in Sources */,
 				AA9E696F1BD796AD008F9F8B /* CourseDataSource.swift in Sources */,
 				AA8FA2991BD67F00000950F5 /* SecondViewController.swift in Sources */,
 				AA8CB6CE1BD91D20005E358C /* AboutViewController.swift in Sources */,
@@ -538,6 +542,7 @@
 				AAAC53C81C1B3F1B0003305D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
