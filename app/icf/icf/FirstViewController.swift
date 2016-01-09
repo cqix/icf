@@ -10,12 +10,15 @@ import UIKit
 import AudioToolbox
 
 class FirstViewController: UIViewController {
+    
+    let uuid = NSUUID().UUIDString
 
     @IBOutlet weak var LabelMain: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        /*
         let urlString = "https://de.wikipedia.org/w/index.php?title=Fubar&printable=yes"
         dispatch_async(
             dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
@@ -38,6 +41,8 @@ class FirstViewController: UIViewController {
                 }
             }
         )
+        */
+        LabelMain.text = "UUID: "+uuid
         
         //Send after 10 seconds
         let localNotification:UILocalNotification = UILocalNotification()
