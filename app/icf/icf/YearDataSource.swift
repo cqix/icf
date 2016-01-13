@@ -38,4 +38,8 @@ class YearDataSource: NSObject, UIPickerViewDataSource, UIPickerViewDelegate {
         return defaults.integerForKey(keyName)
     }
     
+    func getSavedAsText() -> String {
+        return pickerItems[getSavedIndex()]
+    }
+    
 }

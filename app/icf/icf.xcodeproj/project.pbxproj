@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA02AF591C46F06700C21A98 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02AF581C46F06700C21A98 /* SwiftyJSON.swift */; };
 		AA8CB6CE1BD91D20005E358C /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8CB6CD1BD91D20005E358C /* AboutViewController.swift */; };
 		AA8CB6D01BD91E60005E358C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8CB6CF1BD91E60005E358C /* MapKit.framework */; };
 		AA8FA2951BD67F00000950F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FA2941BD67F00000950F5 /* AppDelegate.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA02AF581C46F06700C21A98 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		AA8CB6CD1BD91D20005E358C /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		AA8CB6CF1BD91E60005E358C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		AA8CB6D11BD92049005E358C /* Graz.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Graz.gpx; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				AA8CB6CD1BD91D20005E358C /* AboutViewController.swift */,
 				AAC74CB81C41309200BCEF0F /* LecturerNameDataSource.swift */,
 				AAC74CBA1C41337000BCEF0F /* TypeDataSource.swift */,
+				AA02AF581C46F06700C21A98 /* SwiftyJSON.swift */,
 			);
 			path = icf;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				AAC74CBB1C41337000BCEF0F /* TypeDataSource.swift in Sources */,
 				AA9E696B1BD78CFA008F9F8B /* GroupDataSource.swift in Sources */,
 				AAC74CB91C41309200BCEF0F /* LecturerNameDataSource.swift in Sources */,
+				AA02AF591C46F06700C21A98 /* SwiftyJSON.swift in Sources */,
 				AA9E696F1BD796AD008F9F8B /* CourseDataSource.swift in Sources */,
 				AA8FA2991BD67F00000950F5 /* SecondViewController.swift in Sources */,
 				AA8CB6CE1BD91D20005E358C /* AboutViewController.swift in Sources */,

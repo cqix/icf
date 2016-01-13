@@ -38,4 +38,8 @@ class GroupDataSource: NSObject, UIPickerViewDataSource, UIPickerViewDelegate {
         return defaults.integerForKey(keyName)
     }
     
+    func getSavedAsText() -> String {
+        return String(getSavedIndex())
+    }
+    
 }
