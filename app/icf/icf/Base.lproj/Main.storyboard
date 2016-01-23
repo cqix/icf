@@ -10,27 +10,100 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="icf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
-                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                        <viewControllerLayoutGuide type="top" id="5eO-ky-ArW"/>
+                        <viewControllerLayoutGuide type="bottom" id="G9f-VE-gBp"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                    <view key="view" contentMode="scaleToFill" id="BUX-HR-MKj">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start..." lineBreakMode="wordWrap" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8K1-cw-MJd">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jfp-05-FS6" userLabel="Break Picker">
+                                <rect key="frame" x="77" y="377" width="403" height="76"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="NqU-N4-nT2"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Break" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gO3-6a-pxC">
+                                <rect key="frame" x="77" y="341" width="48" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5s4-wZ-xnQ" userLabel="Content Picker">
+                                <rect key="frame" x="77" y="241" width="403" height="83"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="K9P-T3-2nk"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhS-ep-KFz">
+                                <rect key="frame" x="77" y="28" width="55" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TrK-md-FVR" userLabel="Speed Picker">
+                                <rect key="frame" x="77" y="85" width="403" height="83"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ukt-zy-DYk"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLi-j4-mJd">
+                                <rect key="frame" x="77" y="202" width="73" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rgw-6D-ADL">
+                                <rect key="frame" x="77" y="461" width="293" height="73"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="TrK-md-FVR" secondAttribute="trailing" constant="10" id="12U-12-CSC"/>
+                            <constraint firstItem="G9f-VE-gBp" firstAttribute="top" secondItem="jfp-05-FS6" secondAttribute="bottom" constant="10" id="HnM-DY-ZYW"/>
+                            <constraint firstItem="AhS-ep-KFz" firstAttribute="top" secondItem="5eO-ky-ArW" secondAttribute="bottom" constant="10" id="M5i-ah-ni3"/>
+                            <constraint firstItem="rgw-6D-ADL" firstAttribute="leading" secondItem="BUX-HR-MKj" secondAttribute="leadingMargin" constant="10" id="PcK-Hq-iZO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rgw-6D-ADL" secondAttribute="trailing" constant="10" id="Pxa-FS-sO5"/>
+                            <constraint firstItem="SLi-j4-mJd" firstAttribute="leading" secondItem="BUX-HR-MKj" secondAttribute="leadingMargin" constant="10" id="RFG-Q2-J8R"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5s4-wZ-xnQ" secondAttribute="trailing" constant="10" id="W1L-Zg-EUH"/>
+                            <constraint firstItem="5s4-wZ-xnQ" firstAttribute="top" secondItem="SLi-j4-mJd" secondAttribute="bottom" constant="10" id="WOx-mT-gy0"/>
+                            <constraint firstItem="gO3-6a-pxC" firstAttribute="top" secondItem="5s4-wZ-xnQ" secondAttribute="bottom" constant="10" id="Wj6-gz-Vkj"/>
+                            <constraint firstItem="SLi-j4-mJd" firstAttribute="top" secondItem="TrK-md-FVR" secondAttribute="bottom" constant="10" id="Y7l-7q-e52"/>
+                            <constraint firstItem="gO3-6a-pxC" firstAttribute="leading" secondItem="BUX-HR-MKj" secondAttribute="leadingMargin" constant="10" id="cMd-39-yh6"/>
+                            <constraint firstItem="AhS-ep-KFz" firstAttribute="leading" secondItem="BUX-HR-MKj" secondAttribute="leadingMargin" constant="10" id="dUP-Oa-nVq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AhS-ep-KFz" secondAttribute="trailing" constant="10" id="dhA-q3-un7"/>
+                            <constraint firstItem="TrK-md-FVR" firstAttribute="top" secondItem="AhS-ep-KFz" secondAttribute="bottom" constant="10" id="jrL-cZ-iAh"/>
+                            <constraint firstItem="jfp-05-FS6" firstAttribute="top" secondItem="gO3-6a-pxC" secondAttribute="bottom" constant="10" id="md3-93-t81"/>
+                            <constraint firstItem="rgw-6D-ADL" firstAttribute="top" secondItem="jfp-05-FS6" secondAttribute="bottom" constant="10" id="qSg-FJ-Jkj"/>
+                            <constraint firstItem="5s4-wZ-xnQ" firstAttribute="leading" secondItem="BUX-HR-MKj" secondAttribute="leadingMargin" constant="10" id="qlK-B6-LFT"/>
+                            <constraint firstItem="G9f-VE-gBp" firstAttribute="top" secondItem="rgw-6D-ADL" secondAttribute="bottom" constant="10" id="r5J-j4-Bi1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gO3-6a-pxC" secondAttribute="trailing" constant="10" id="raQ-0n-HPr"/>
+                            <constraint firstItem="jfp-05-FS6" firstAttribute="leading" secondItem="BUX-HR-MKj" secondAttribute="leadingMargin" constant="10" id="vyH-rd-ic1"/>
+                            <constraint firstItem="TrK-md-FVR" firstAttribute="leading" secondItem="BUX-HR-MKj" secondAttribute="leadingMargin" constant="10" id="xF7-hQ-AnX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jfp-05-FS6" secondAttribute="trailing" constant="10" id="xrS-jt-EGN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SLi-j4-mJd" secondAttribute="trailing" constant="10" id="zRL-AG-Yjj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HnM-DY-ZYW"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="LabelMain" destination="8K1-cw-MJd" id="Vfh-zf-DrO"/>
+                        <outlet property="textMain" destination="rgw-6D-ADL" id="cEx-bD-gsO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -163,11 +236,11 @@
                             <constraint firstItem="UqC-fX-8oH" firstAttribute="width" secondItem="QS5-Rx-YEW" secondAttribute="width" id="6BM-LJ-TR8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8Wm-wz-wKR" secondAttribute="trailing" id="9cW-TC-XmI"/>
                             <constraint firstItem="UqC-fX-8oH" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="GpQ-wO-Z3N"/>
-                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="8Wm-wz-wKR" secondAttribute="bottom" priority="900" constant="3" id="Mqi-sg-og6"/>
+                            <constraint firstItem="UqC-fX-8oH" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" priority="900" constant="10" id="X3e-dU-zxX"/>
                             <constraint firstAttribute="leadingMargin" secondItem="8Wm-wz-wKR" secondAttribute="leading" id="ZDE-eY-7zr"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="8Wm-wz-wKR" secondAttribute="bottom" priority="900" constant="3" id="ZPD-Cd-ZCi"/>
                             <constraint firstItem="8Wm-wz-wKR" firstAttribute="top" secondItem="UqC-fX-8oH" secondAttribute="bottom" priority="900" constant="5" id="tYh-px-Erv"/>
                             <constraint firstAttribute="leadingMargin" secondItem="8Wm-wz-wKR" secondAttribute="leading" id="ya9-3L-aqm"/>
-                            <constraint firstItem="UqC-fX-8oH" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" priority="900" constant="10" id="zek-p7-bOg"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="settings" id="cPa-gy-q4n"/>

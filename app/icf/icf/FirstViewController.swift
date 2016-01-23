@@ -14,13 +14,13 @@ import MobileCoreServices
 class FirstViewController: UIViewController {
     let uuid = NSUUID().UUIDString
 
-    @IBOutlet weak var LabelMain: UILabel!
-    
     let typeDataSource = TypeDataSource()
     let groupDataSource = GroupDataSource()
     let yearDataSource = YearDataSource()
     let courseDataSource = CourseDataSource()
     let lecturerNameDataSource = LecturerNameDataSource()
+    
+    @IBOutlet weak var textMain: UITextView!
     
     //Spotlight
     internal var attributeSet: CSSearchableItemAttributeSet {
@@ -50,12 +50,14 @@ class FirstViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
+                
         if (typeDataSource.getSavedIndex() != 0) {
             dispatch_async(dispatch_get_main_queue()) {
-                self.LabelMain.text = "Willkommen "+self.lecturerNameDataSource.getSavedText()
+                self.textMain.text = "Willkommen "+self.lecturerNameDataSource.getSavedText()
             }
             return
         }
+
         
         let urlComponents = NSURLComponents(string: "http://localhost:7777/courses")!
         urlComponents.queryItems = [
@@ -74,33 +76,35 @@ class FirstViewController: UIViewController {
                         if let dataFromString = contents.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false) {
                             let json = JSON(data: dataFromString)
                             let info = json[0];
+                
                             dispatch_async(dispatch_get_main_queue()) {
                                 if let lecturer = info["lecturer"].string {
-                                    self.LabelMain.text = "Referent: "+lecturer
+                                    self.textMain.text = "Referent: "+lecturer
                                 } else {
                                     print("Error missing lecturer")
                                 }
                                 if let course = info["course"].string {
-                                    self.LabelMain.text = self.LabelMain.text!+"\nLV: "+course
+                                    self.textMain.text = self.textMain.text!+"\nLV: "+course
                                 } else {
                                     print("Error missing course")
                                 }
                                 if let location = info["location"].string {
-                                    self.LabelMain.text = self.LabelMain.text!+"\nOrt: "+location
+                                    self.textMain.text = self.textMain.text!+"\nOrt: "+location
                                 } else {
                                     print("Error missing location")
                                 }
                                 if let start = info["start"].string {
-                                    self.LabelMain.text = self.LabelMain.text!+"\nZeit: "+start
+                                    self.textMain.text = self.textMain.text!+"\nZeit: "+start
                                 } else {
                                     print("Error missing start")
                                 }
                                 if let end = info["end"].string {
-                                    self.LabelMain.text = self.LabelMain.text!+" - "+end
+                                    self.textMain.text = self.textMain.text!+" - "+end
                                 } else {
                                     print("Error missing end")
                                 }
                             }
+
                         } else {
                             print("Error decoding json")
                         }
