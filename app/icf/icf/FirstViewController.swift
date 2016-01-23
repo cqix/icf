@@ -20,6 +20,13 @@ class FirstViewController: UIViewController {
     let courseDataSource = CourseDataSource()
     let lecturerNameDataSource = LecturerNameDataSource()
     
+    let speedDataSource = SpeedDataSource()
+    let contentDataSource = ContentDataSource()
+    let breakDataSource = BreakDataSource()
+    
+    @IBOutlet weak var speedPicker: UIPickerView!
+    @IBOutlet weak var contentPicker: UIPickerView!
+    @IBOutlet weak var breakPicker: UIPickerView!
     @IBOutlet weak var textMain: UITextView!
     
     //Spotlight
@@ -45,6 +52,18 @@ class FirstViewController: UIViewController {
                 print("Search item successfully indexed!")
             }
         }
+        
+        speedPicker.dataSource = speedDataSource
+        speedPicker.delegate = speedDataSource
+        speedPicker.selectRow(2, inComponent: 0, animated: true)
+        
+        contentPicker.dataSource = contentDataSource
+        contentPicker.delegate = contentDataSource
+        contentPicker.selectRow(2, inComponent: 0, animated: true)
+        
+        breakPicker.dataSource = breakDataSource
+        breakPicker.delegate = breakDataSource
+        breakPicker.selectRow(2, inComponent: 0, animated: true)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -95,7 +114,9 @@ class FirstViewController: UIViewController {
                             }
                 
                             if (current==nil) {
-                                self.textMain.text = "No current course!"
+                                dispatch_async(dispatch_get_main_queue()) {
+                                    self.textMain.text = "No current course!"
+                                }
                                 return
                             }
                 

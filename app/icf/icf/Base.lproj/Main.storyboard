@@ -23,10 +23,18 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="NqU-N4-nT2"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="NqU-N4-nT2"/>
+                                    </mask>
+                                </variation>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Break" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gO3-6a-pxC">
                                 <rect key="frame" x="77" y="341" width="48" height="21"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ItS-kY-wIJ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -37,10 +45,18 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="K9P-T3-2nk"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="K9P-T3-2nk"/>
+                                    </mask>
+                                </variation>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhS-ep-KFz">
                                 <rect key="frame" x="77" y="28" width="55" height="21"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="u5m-5i-Xj6"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -51,18 +67,29 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="ukt-zy-DYk"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ukt-zy-DYk"/>
+                                    </mask>
+                                </variation>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLi-j4-mJd">
                                 <rect key="frame" x="77" y="202" width="73" height="21"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OYR-Yd-9El"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rgw-6D-ADL">
-                                <rect key="frame" x="77" y="461" width="293" height="73"/>
+                                <rect key="frame" x="137" y="476" width="293" height="44"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Jdb-1x-DEu"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -72,6 +99,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="TrK-md-FVR" secondAttribute="trailing" constant="10" id="12U-12-CSC"/>
+                            <constraint firstItem="5s4-wZ-xnQ" firstAttribute="height" secondItem="TrK-md-FVR" secondAttribute="height" id="AjW-Gn-mgo"/>
+                            <constraint firstItem="jfp-05-FS6" firstAttribute="height" secondItem="5s4-wZ-xnQ" secondAttribute="height" id="Cy8-Us-G1o"/>
                             <constraint firstItem="G9f-VE-gBp" firstAttribute="top" secondItem="jfp-05-FS6" secondAttribute="bottom" constant="10" id="HnM-DY-ZYW"/>
                             <constraint firstItem="AhS-ep-KFz" firstAttribute="top" secondItem="5eO-ky-ArW" secondAttribute="bottom" constant="10" id="M5i-ah-ni3"/>
                             <constraint firstItem="rgw-6D-ADL" firstAttribute="leading" secondItem="BUX-HR-MKj" secondAttribute="leadingMargin" constant="10" id="PcK-Hq-iZO"/>
@@ -103,6 +132,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="SpeedPicker" destination="TrK-md-FVR" id="fa5-G1-VJd"/>
+                        <outlet property="breakPicker" destination="jfp-05-FS6" id="xbo-jE-0Tu"/>
+                        <outlet property="contentPicker" destination="5s4-wZ-xnQ" id="fDr-22-dQC"/>
+                        <outlet property="speedPicker" destination="TrK-md-FVR" id="ofl-Ch-maw"/>
                         <outlet property="textMain" destination="rgw-6D-ADL" id="cEx-bD-gsO"/>
                     </connections>
                 </viewController>
