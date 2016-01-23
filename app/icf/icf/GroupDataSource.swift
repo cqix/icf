@@ -39,7 +39,7 @@ class GroupDataSource: NSObject, UIPickerViewDataSource, UIPickerViewDelegate {
     }
     
     func getSavedAsText() -> String {
-        return String(getSavedIndex())
+        return pickerItems[getSavedIndex()]
     }
     
 }

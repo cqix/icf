@@ -45,21 +45,6 @@ class FirstViewController: UIViewController {
                 print("Search item successfully indexed!")
             }
         }
-
-    
-        /*
-        AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
-        LabelMain.text = "UUID: "+uuid
-
-        //Send after 10 seconds
-        let localNotification:UILocalNotification = UILocalNotification()
-        localNotification.alertAction = "Testing notifications on iOS8"
-        localNotification.alertBody = "Local notifications are working"
-        localNotification.fireDate = NSDate(timeIntervalSinceNow: 10)
-        localNotification.soundName = UILocalNotificationDefaultSoundName
-        localNotification.category = "invite"
-        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
-        */
     }
     
     override func viewDidAppear(animated: Bool) {
