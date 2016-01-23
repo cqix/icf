@@ -1,13 +1,16 @@
 {
   "name": "icfserver",
   "version": "0.0.1",
-  "description": "ERROR: No README data found!",
+  "description": "ICF Server",
   "main": "icfserver.js",
   "dependencies": {
+    "body-parser": "~1.14.2",
     "debug": "~2.2.0",
     "ee-first": "~1.1.1",
     "express": "~4.13.3",
     "ical.js": "~1.1.2",
+    "node-schedule": "~0.6.0",
+    "package.json": "~0.0.0",
     "request": "~2.67.0",
     "unpipe": "~1.0.0",
     "xml2js": "~0.4.15"
