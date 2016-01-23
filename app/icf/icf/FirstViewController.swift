@@ -8,9 +8,10 @@
 
 import UIKit
 import AudioToolbox
+import CoreSpotlight
+import MobileCoreServices
 
 class FirstViewController: UIViewController {
-    
     let uuid = NSUUID().UUIDString
 
     @IBOutlet weak var LabelMain: UILabel!
@@ -20,10 +21,32 @@ class FirstViewController: UIViewController {
     let yearDataSource = YearDataSource()
     let courseDataSource = CourseDataSource()
     let lecturerNameDataSource = LecturerNameDataSource()
-
+    
+    //Spotlight
+    internal var attributeSet: CSSearchableItemAttributeSet {
+        let attributeSet = CSSearchableItemAttributeSet(
+            itemContentType: kUTTypeText as String )
+        attributeSet.title = "InstantCourseFeedback"
+        attributeSet.contentDescription = "FH"
+        
+        return attributeSet
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Spotlight register
+        let item = CSSearchableItem (uniqueIdentifier: "icfmain", domainIdentifier: "at.fh-joanneum.icf", attributeSet: attributeSet)
+
+        CSSearchableIndex.defaultSearchableIndex().indexSearchableItems([item]) { error in
+            if let error = error {
+                print("Indexing error: \(error.localizedDescription)")
+            } else {
+                print("Search item successfully indexed!")
+            }
+        }
+
+    
         /*
         AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
         LabelMain.text = "UUID: "+uuid
