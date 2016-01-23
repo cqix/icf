@@ -55,17 +55,19 @@ class FirstViewController: UIViewController {
             dispatch_async(dispatch_get_main_queue()) {
                 self.textMain.text = "Willkommen "+self.lecturerNameDataSource.getSavedText()
             }
-            return
+        } else {
+            loadCurrentForStudent()
         }
 
-        
+    }
+    
+    func loadCurrentForStudent() {
         let urlComponents = NSURLComponents(string: "http://localhost:7777/courses")!
         urlComponents.queryItems = [
             NSURLQueryItem(name: "study", value: courseDataSource.getSavedAsText()),
             NSURLQueryItem(name: "year", value: yearDataSource.getSavedAsText()),
             NSURLQueryItem(name: "group", value: groupDataSource.getSavedAsText())
         ]
-        
         dispatch_async(
             dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
                 print("block executed in the background.")
@@ -74,41 +76,61 @@ class FirstViewController: UIViewController {
                         let contents = try  String(contentsOfURL: url)
                         print("We got: "+contents)
                         if let dataFromString = contents.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false) {
+                            let dateFormatter = NSDateFormatter()
+                            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+                
+                            let dateNow = NSDate()
+                            let dateNowFormatter = NSDateFormatter()
+                            dateNowFormatter.dateFormat = "yyyy-MM-dd "
+                            let dateNowStr = dateNowFormatter.stringFromDate(dateNow)
+                
                             let json = JSON(data: dataFromString)
-                            let info = json[0];
+                            var current:JSON = nil
+                            for (_, info):(String, JSON) in json {
+                                let start_date = dateFormatter.dateFromString(dateNowStr+info["start"].string!)
+                                let end_date = dateFormatter.dateFromString(dateNowStr+info["end"].string!)
+                                if (dateNow.compare(start_date!)==NSComparisonResult.OrderedDescending && dateNow.compare(end_date!)==NSComparisonResult.OrderedAscending) {
+                                    current = info
+                                }
+                            }
+                
+                            if (current==nil) {
+                                self.textMain.text = "No current course!"
+                                return
+                            }
+                
                 
                             dispatch_async(dispatch_get_main_queue()) {
-                                if let lecturer = info["lecturer"].string {
+                                if let lecturer = current["lecturer"].string {
                                     self.textMain.text = "Referent: "+lecturer
                                 } else {
                                     print("Error missing lecturer")
                                 }
-                                if let course = info["course"].string {
+                                if let course = current["course"].string {
                                     self.textMain.text = self.textMain.text!+"\nLV: "+course
                                 } else {
                                     print("Error missing course")
                                 }
-                                if let location = info["location"].string {
+                                if let location = current["location"].string {
                                     self.textMain.text = self.textMain.text!+"\nOrt: "+location
                                 } else {
                                     print("Error missing location")
                                 }
-                                if let start = info["start"].string {
+                                if let start = current["start"].string {
                                     self.textMain.text = self.textMain.text!+"\nZeit: "+start
                                 } else {
                                     print("Error missing start")
                                 }
-                                if let end = info["end"].string {
+                                if let end = current["end"].string {
                                     self.textMain.text = self.textMain.text!+" - "+end
                                 } else {
                                     print("Error missing end")
                                 }
                             }
-
                         } else {
                             print("Error decoding json")
                         }
-                        
+                
                     } catch let error {
                         print("Error \(error)")
                     }
