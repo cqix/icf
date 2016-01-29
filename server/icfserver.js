@@ -112,7 +112,7 @@ app.get('/courses', function (req, res) {
 
 
 app.get('/vote', function (req, res) {	
-	console.log('Incoming POST Params: ' + JSON.stringify(req.query));
+	console.log('Incoming GET Params: ' + JSON.stringify(req.query));
 	paramToken = req.query.token;
 	paramLecturer = req.query.lecturer;
 	paramTime = req.query.time;

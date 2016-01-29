@@ -33,10 +33,11 @@ class ServerComm {
             NSURLQueryItem(name: "token", value: uuid),
             NSURLQueryItem(name: "lecturer", value: lecturer),
             NSURLQueryItem(name: "time", value: endTime),
-            NSURLQueryItem(name: "speed", value: String(sp!.getSavedIndex())),
-            NSURLQueryItem(name: "content", value: String(cs!.getSavedIndex())),
-            NSURLQueryItem(name: "break", value: String(bs!.getSavedIndex()))
+            NSURLQueryItem(name: "speed", value: String(sp!.getSavedIndex()+1)),
+            NSURLQueryItem(name: "content", value: String(cs!.getSavedIndex()+1)),
+            NSURLQueryItem(name: "break", value: String(bs!.getSavedIndex()+1))
         ]
+        print("Url \(urlComponents)")
         dispatch_async(
             dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
                 print("block executed in the background.")

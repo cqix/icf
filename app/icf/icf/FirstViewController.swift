@@ -73,9 +73,18 @@ class FirstViewController: UIViewController {
                 
         if (typeDataSource.getSavedIndex() != 0) {
             dispatch_async(dispatch_get_main_queue()) {
+                self.speedPicker.userInteractionEnabled = false
+                self.contentPicker.userInteractionEnabled = false
+                self.breakPicker.userInteractionEnabled = false
                 self.textMain.text = "Willkommen "+self.lecturerNameDataSource.getSavedText()
             }
+            loadCurrentForLecturer()
         } else {
+            dispatch_async(dispatch_get_main_queue()) {
+                self.speedPicker.userInteractionEnabled = true
+                self.contentPicker.userInteractionEnabled = true
+                self.breakPicker.userInteractionEnabled = true
+            }
             loadCurrentForStudent()
         }
 
@@ -146,7 +155,7 @@ class FirstViewController: UIViewController {
                                 }
                                 if let end = current["end"].string {
                                     self.textMain.text = self.textMain.text!+" - "+end
-                                    ServerComm.sharedInstance.setLecturer(end)
+                                    ServerComm.sharedInstance.setEndTime(end)
                                 } else {
                                     print("Error missing end")
                                 }
@@ -164,6 +173,54 @@ class FirstViewController: UIViewController {
             }
         )
     }
+    
+    func loadCurrentForLecturer() {
+        let urlComponents = NSURLComponents(string: "http://localhost:7777/feedback")!
+        urlComponents.queryItems = [
+            NSURLQueryItem(name: "lecturer", value: lecturerNameDataSource.getSavedText()),
+        ]
+        dispatch_async(
+            dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
+                print("block executed in the background.")
+                if let url = urlComponents.URL {
+                    do {
+                        let contents = try  String(contentsOfURL: url)
+                        print("We got: "+contents)
+                        if let dataFromString = contents.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false) {
+                            let json = JSON(data: dataFromString)
+                            
+                            
+                            dispatch_async(dispatch_get_main_queue()) {
+                                if let speed = json["voting"]["speed"].int {
+                                    self.speedPicker.selectRow(speed-1, inComponent: 0, animated: true)
+                                } else {
+                                    print("Error missing speed")
+                                }
+                                if let content = json["voting"]["content"].int {
+                                    self.contentPicker.selectRow(content-1, inComponent: 0, animated: true)
+                                } else {
+                                    print("Error missing speed")
+                                }
+                                if let breakProp = json["voting"]["breakProp"].int {
+                                    self.breakPicker.selectRow(breakProp-1, inComponent: 0, animated: true)
+                                } else {
+                                    print("Error missing breakProp")
+                                }
+                            }
+                        } else {
+                            print("Error decoding json")
+                        }
+                        
+                    } catch let error {
+                        print("Error \(error)")
+                    }
+                } else {
+                    print("Url is invalid")
+                }
+            }
+        )
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
