@@ -12,7 +12,6 @@ import CoreSpotlight
 import MobileCoreServices
 
 class FirstViewController: UIViewController {
-    let uuid = NSUUID().UUIDString
 
     let typeDataSource = TypeDataSource()
     let groupDataSource = GroupDataSource()
@@ -41,6 +40,8 @@ class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ServerComm.sharedInstance.setup(speedDataSource, cs: contentDataSource, bs: breakDataSource)
         
         //Spotlight register
         let item = CSSearchableItem (uniqueIdentifier: "icfmain", domainIdentifier: "at.fh-joanneum.icf", attributeSet: attributeSet)
@@ -124,6 +125,7 @@ class FirstViewController: UIViewController {
                             dispatch_async(dispatch_get_main_queue()) {
                                 if let lecturer = current["lecturer"].string {
                                     self.textMain.text = "Referent: "+lecturer
+                                    ServerComm.sharedInstance.setLecturer(lecturer)
                                 } else {
                                     print("Error missing lecturer")
                                 }
@@ -144,6 +146,7 @@ class FirstViewController: UIViewController {
                                 }
                                 if let end = current["end"].string {
                                     self.textMain.text = self.textMain.text!+" - "+end
+                                    ServerComm.sharedInstance.setLecturer(end)
                                 } else {
                                     print("Error missing end")
                                 }

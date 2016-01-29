@@ -11,6 +11,7 @@
 		AA6697E31C53CC4800F6819D /* SpeedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6697E21C53CC4800F6819D /* SpeedDataSource.swift */; };
 		AA6697E51C53CCA000F6819D /* ContentDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6697E41C53CCA000F6819D /* ContentDataSource.swift */; };
 		AA6697E71C53CCAD00F6819D /* BreakDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6697E61C53CCAD00F6819D /* BreakDataSource.swift */; };
+		AA7105541C53D4EF0053F69F /* ServerComm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7105531C53D4EF0053F69F /* ServerComm.swift */; };
 		AA8CB6CE1BD91D20005E358C /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8CB6CD1BD91D20005E358C /* AboutViewController.swift */; };
 		AA8CB6D01BD91E60005E358C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8CB6CF1BD91E60005E358C /* MapKit.framework */; };
 		AA8FA2951BD67F00000950F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FA2941BD67F00000950F5 /* AppDelegate.swift */; };
@@ -50,6 +51,7 @@
 		AA6697E21C53CC4800F6819D /* SpeedDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedDataSource.swift; sourceTree = "<group>"; };
 		AA6697E41C53CCA000F6819D /* ContentDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentDataSource.swift; sourceTree = "<group>"; };
 		AA6697E61C53CCAD00F6819D /* BreakDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreakDataSource.swift; sourceTree = "<group>"; };
+		AA7105531C53D4EF0053F69F /* ServerComm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerComm.swift; sourceTree = "<group>"; };
 		AA8CB6CD1BD91D20005E358C /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		AA8CB6CF1BD91E60005E358C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		AA8CB6D11BD92049005E358C /* Graz.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Graz.gpx; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				AA6697E21C53CC4800F6819D /* SpeedDataSource.swift */,
 				AA6697E41C53CCA000F6819D /* ContentDataSource.swift */,
 				AA6697E61C53CCAD00F6819D /* BreakDataSource.swift */,
+				AA7105531C53D4EF0053F69F /* ServerComm.swift */,
 			);
 			path = icf;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				AAC74CB91C41309200BCEF0F /* LecturerNameDataSource.swift in Sources */,
 				AA02AF591C46F06700C21A98 /* SwiftyJSON.swift in Sources */,
 				AA9E696F1BD796AD008F9F8B /* CourseDataSource.swift in Sources */,
+				AA7105541C53D4EF0053F69F /* ServerComm.swift in Sources */,
 				AA6697E31C53CC4800F6819D /* SpeedDataSource.swift in Sources */,
 				AA6697E71C53CCAD00F6819D /* BreakDataSource.swift in Sources */,
 				AA8FA2991BD67F00000950F5 /* SecondViewController.swift in Sources */,

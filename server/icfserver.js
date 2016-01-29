@@ -111,14 +111,14 @@ app.get('/courses', function (req, res) {
 })
 
 
-app.post('/vote', function (req, res) {	
-	console.log('Incoming POST Params: ' + JSON.stringify(req.body));
-	paramToken = req.body.token;
-	paramLecturer = req.body.lecturer;
-	paramTime = req.body.time;
-	paramBreak = parseInt(req.body[BREAK]);
-	paramContent = parseInt(req.body[CONTENT]);
-	paramSpeed = parseInt(req.body[SPEED]);
+app.get('/vote', function (req, res) {	
+	console.log('Incoming POST Params: ' + JSON.stringify(req.query));
+	paramToken = req.query.token;
+	paramLecturer = req.query.lecturer;
+	paramTime = req.query.time;
+	paramBreak = parseInt(req.query[BREAK]);
+	paramContent = parseInt(req.query[CONTENT]);
+	paramSpeed = parseInt(req.query[SPEED]);
 
 	
 	if(paramToken == null || paramLecturer == null || paramBreak == null || paramSpeed == null || paramContent== null){
@@ -244,7 +244,7 @@ function getDateOfTodayWithFormatYYYYMMDD() {
 	var yyyy = today.getFullYear().toString();
 	var mm = (today.getMonth()+1).toString(); // getMonth() is zero-based
 	var dd  = today.getDate().toString();
-	return '20160109'; // for testing only
+	return '20160304'; // for testing only
 	//return yyyy + (mm[1]?mm:"0"+mm[0]) + (dd[1]?dd:"0"+dd[0]); // padding
  };
  
