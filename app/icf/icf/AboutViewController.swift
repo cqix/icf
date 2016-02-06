@@ -5,7 +5,7 @@
 //  Created by Patrick Gröller, Christian Koller, Helmut Kopf on 22.10.15.
 //  Copyright © 2015 FH. All rights reserved.
 //
-
+// shows the route to Kapfenberg
 import UIKit
 import MapKit
 

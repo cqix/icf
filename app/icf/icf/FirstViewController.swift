@@ -5,13 +5,13 @@
 //  Created by Patrick Gröller, Christian Koller, Helmut Kopf on 20.10.15.
 //  Copyright © 2015 FH. All rights reserved.
 //
+//Main (status) view
 
 import UIKit
 import AudioToolbox
 import CoreSpotlight
 import MobileCoreServices
 
-//Main (status) view
 class FirstViewController: UIViewController {
 
     let typeDataSource = TypeDataSource()

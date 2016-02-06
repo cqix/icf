@@ -5,7 +5,7 @@
 //  Created by Patrick Gröller, Christian Koller, Helmut Kopf on 09.01.16.
 //  Copyright © 2016 FH. All rights reserved.
 //
-
+// are you a lecturer or a student
 import UIKit
 
 class TypeDataSource: NSObject {

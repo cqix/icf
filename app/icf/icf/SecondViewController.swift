@@ -5,10 +5,10 @@
 //  Created by Patrick Gröller, Christian Koller, Helmut Kopf on 20.10.15.
 //  Copyright © 2015 FH. All rights reserved.
 //
+// Settings view
 
 import UIKit
 
-// Settings view
 class SecondViewController: UIViewController {
     
     @IBOutlet weak var coursePicker: UIPickerView!
