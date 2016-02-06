@@ -8,6 +8,7 @@
 
 import Foundation
 
+// The config file
 class CommSettings {
     
     static let address = "http://localhost:7777"

@@ -11,6 +11,7 @@ import AudioToolbox
 import CoreSpotlight
 import MobileCoreServices
 
+//Main (status) view
 class FirstViewController: UIViewController {
 
     let typeDataSource = TypeDataSource()

@@ -8,6 +8,7 @@
 
 import UIKit
 
+// Settings view
 class SecondViewController: UIViewController {
     
     @IBOutlet weak var coursePicker: UIPickerView!

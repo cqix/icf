@@ -28,6 +28,7 @@
 		AAAC53C31C1B3F1B0003305D /* icfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAC53C21C1B3F1B0003305D /* icfUITests.swift */; };
 		AAC74CB91C41309200BCEF0F /* LecturerNameDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC74CB81C41309200BCEF0F /* LecturerNameDataSource.swift */; };
 		AAC74CBB1C41337000BCEF0F /* TypeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC74CBA1C41337000BCEF0F /* TypeDataSource.swift */; };
+		AAF1E0CD1C661781001EB312 /* CommSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA3C1B81C66052100488FA6 /* CommSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -331,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAF1E0CD1C661781001EB312 /* CommSettings.swift in Sources */,
 				AA8FA2AC1BD67F00000950F5 /* icfTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +468,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = icf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "at.fh-joanneum.icf";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -477,6 +480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = icf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "at.fh-joanneum.icf";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import icf
 
 class icfTests: XCTestCase {
     
@@ -29,7 +28,7 @@ class icfTests: XCTestCase {
         
         dispatch_async(dispatch_get_main_queue()) { () -> Void in
             print("Start")
-            sleep(4)
+            XCTAssertNotNil(CommSettings.address)
             print("End")
             expectation.fulfill()
         }
