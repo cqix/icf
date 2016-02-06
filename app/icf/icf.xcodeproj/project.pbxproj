@@ -24,6 +24,7 @@
 		AA9E696B1BD78CFA008F9F8B /* GroupDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E696A1BD78CFA008F9F8B /* GroupDataSource.swift */; };
 		AA9E696D1BD7969E008F9F8B /* YearDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E696C1BD7969E008F9F8B /* YearDataSource.swift */; };
 		AA9E696F1BD796AD008F9F8B /* CourseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E696E1BD796AD008F9F8B /* CourseDataSource.swift */; };
+		AAA3C1B91C66052100488FA6 /* CommSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA3C1B81C66052100488FA6 /* CommSettings.swift */; };
 		AAAC53C31C1B3F1B0003305D /* icfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAC53C21C1B3F1B0003305D /* icfUITests.swift */; };
 		AAC74CB91C41309200BCEF0F /* LecturerNameDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC74CB81C41309200BCEF0F /* LecturerNameDataSource.swift */; };
 		AAC74CBB1C41337000BCEF0F /* TypeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC74CBA1C41337000BCEF0F /* TypeDataSource.swift */; };
@@ -69,6 +70,7 @@
 		AA9E696A1BD78CFA008F9F8B /* GroupDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupDataSource.swift; sourceTree = "<group>"; };
 		AA9E696C1BD7969E008F9F8B /* YearDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearDataSource.swift; sourceTree = "<group>"; };
 		AA9E696E1BD796AD008F9F8B /* CourseDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDataSource.swift; sourceTree = "<group>"; };
+		AAA3C1B81C66052100488FA6 /* CommSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommSettings.swift; sourceTree = "<group>"; };
 		AAAC53C01C1B3F1B0003305D /* icfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = icfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAAC53C21C1B3F1B0003305D /* icfUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icfUITests.swift; sourceTree = "<group>"; };
 		AAAC53C41C1B3F1B0003305D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				AA6697E41C53CCA000F6819D /* ContentDataSource.swift */,
 				AA6697E61C53CCAD00F6819D /* BreakDataSource.swift */,
 				AA7105531C53D4EF0053F69F /* ServerComm.swift */,
+				AAA3C1B81C66052100488FA6 /* CommSettings.swift */,
 			);
 			path = icf;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				AAC74CB91C41309200BCEF0F /* LecturerNameDataSource.swift in Sources */,
 				AA02AF591C46F06700C21A98 /* SwiftyJSON.swift in Sources */,
 				AA9E696F1BD796AD008F9F8B /* CourseDataSource.swift in Sources */,
+				AAA3C1B91C66052100488FA6 /* CommSettings.swift in Sources */,
 				AA7105541C53D4EF0053F69F /* ServerComm.swift in Sources */,
 				AA6697E31C53CC4800F6819D /* SpeedDataSource.swift in Sources */,
 				AA6697E71C53CCAD00F6819D /* BreakDataSource.swift in Sources */,

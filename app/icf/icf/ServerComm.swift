@@ -2,7 +2,7 @@
 //  ServerComm.swift
 //  icf
 //
-//  Created by Christian Koller on 23.01.16.
+//  Created by Patrick Gröller, Christian Koller, Helmut Kopf on 21.10.15.
 //  Copyright © 2016 FH. All rights reserved.
 //
 
@@ -20,15 +20,17 @@ class ServerComm {
     
     static let sharedInstance = ServerComm()
     
+    //Setup data sources
     func setup(sp:SpeedDataSource, cs:ContentDataSource, bs:BreakDataSource) {
         self.sp = sp
         self.cs = cs
         self.bs = bs
     }
     
+    //Send to server
     func send()
     {
-        let urlComponents = NSURLComponents(string: "http://localhost:7777/vote")!
+        let urlComponents = NSURLComponents(string: CommSettings.address+"/vote")!
         urlComponents.queryItems = [
             NSURLQueryItem(name: "token", value: uuid),
             NSURLQueryItem(name: "lecturer", value: lecturer),

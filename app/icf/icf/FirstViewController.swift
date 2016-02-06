@@ -90,8 +90,9 @@ class FirstViewController: UIViewController {
 
     }
     
+    //Get for student
     func loadCurrentForStudent() {
-        let urlComponents = NSURLComponents(string: "http://localhost:7777/courses")!
+        let urlComponents = NSURLComponents(string: CommSettings.address+"/courses")!
         urlComponents.queryItems = [
             NSURLQueryItem(name: "study", value: courseDataSource.getSavedAsText()),
             NSURLQueryItem(name: "year", value: yearDataSource.getSavedAsText()),
@@ -174,8 +175,9 @@ class FirstViewController: UIViewController {
         )
     }
     
+    //Get for lecturer
     func loadCurrentForLecturer() {
-        let urlComponents = NSURLComponents(string: "http://localhost:7777/feedback")!
+        let urlComponents = NSURLComponents(string: CommSettings.address+"/feedback")!
         urlComponents.queryItems = [
             NSURLQueryItem(name: "lecturer", value: lecturerNameDataSource.getSavedText()),
         ]
